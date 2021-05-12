@@ -17,3 +17,95 @@ footer {
   height: 100px;
   background: rgb(45, 51, 58);
 }
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.clasa h1{
+  color:black !important;
+  font-size:48px;
+  margin-bottom: 15px;
+}
+
+.clasa{
+  width: 100%;
+
+  position: absolute;
+  top: 16%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+
+}
+.progres-bar{
+  display: flex;
+  width: 63%;
+  max-width:1010px;
+  height: 10px;
+  content: "";
+  opacity: 1;
+  position: absolute;
+  background: #006259;
+  top:120%;
+  border-radius: 10px;
+  animation: progres-bar 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  margin-bottom: 30px;
+}
+
+@keyframes progres-bar{
+20% 
+  {
+      opacity: .5;
+    
+  }
+50%
+  {
+      opacity: .7;
+  }
+60%
+  {
+   opacity: .8;
+  }
+
+70%
+  {
+   opacity: .9;
+   }
+90%
+  {
+  opacity: 1;
+  }
+  
+}
+.text{
+  display: flex;
+  position: absolute;
+  top: 125%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.btn
+{
+  width: 190px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  background: #d40007;
+  border-radius: 5px;
+  outline: none !important;
+  border: none !important;
+  box-sizing: border-box;
+  font-size: 1em;
+  vertical-align: middle;
+  text-size-adjust: 100%;
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: none;
+}
+.btn:hover{
+  opacity: 0.8;
+  transition:0.3s;
+}
