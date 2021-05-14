@@ -1,19 +1,74 @@
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* Modificare bg dupa exemplul primit */
+    background-color: #e2e9f1;
 }
 
 nav {
-  height: 100px;
-  background: rgb(49, 114, 175);
+    height: 100px;
+    background: rgb(49, 114, 175);
 }
 
 section {
-  height: 1000px;
+    height: 1000px;
 }
 
 footer {
-  height: 100px;
-  background: rgb(45, 51, 58);
+    height: 100px;
+    background: rgb(45, 51, 58);
 }
+
+
+/* Profile wrapper */
+
+#profile-wrapper {
+    width: 95%;
+    border-radius: 5px;
+    padding: 30px;
+    height: 200px;
+    margin: auto;
+}
+
+#profile-left {
+    float: left;
+    background-color: white;
+    height: 388px;
+    width: 30%;
+    border-radius: 15px;
+    text-align: center;
+    display: table;
+}
+
+#profile-right {
+    float: right;
+    background-color: white;
+    height: 100px;
+    width: 68%;
+    border-radius: 15px;
+    display: table;
+}
+
+#profile-right-info {
+    display: block;
+    height: 40px;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 20px;
+    font-size: 18px;
+}
+
+#profile-right-info h2 {
+    font-size: 18px;
+    display: inline;
+    padding-right: 10px;
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* End of profile wrapper */
