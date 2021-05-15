@@ -31,7 +31,6 @@ footer {
 }
 
 #profile-left {
-    float: left;
     background-color: white;
     height: 388px;
     border-radius: 15px;
@@ -43,7 +42,6 @@ footer {
 }
 
 #profile-right {
-    float: right;
     background-color: white;
     height: 100px;
     border-radius: 15px;
