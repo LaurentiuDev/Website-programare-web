@@ -24,30 +24,32 @@ footer {
 /* Profile wrapper */
 
 #profile-wrapper {
-    width: 95%;
     border-radius: 5px;
     padding: 30px;
     height: 200px;
-    margin: auto;
+    display: flex;
 }
 
 #profile-left {
     float: left;
     background-color: white;
     height: 388px;
-    width: 30%;
     border-radius: 15px;
     text-align: center;
     display: table;
+    margin-right: 30px;
+    order: 1;
+    flex: 1 2 50px;
 }
 
 #profile-right {
     float: right;
     background-color: white;
     height: 100px;
-    width: 68%;
     border-radius: 15px;
     display: table;
+    flex: 2 2 30%;
+    order: 2;
 }
 
 #profile-right-info {
@@ -58,7 +60,15 @@ footer {
     font-size: 18px;
 }
 
-#profile-right-info h2 {
+#profile-right-info-website {
+    display: block;
+    height: 40px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+#profile-right-info h3,
+#profile-right-info-website h3 {
     font-size: 18px;
     display: inline;
     padding-right: 10px;
