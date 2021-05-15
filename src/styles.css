@@ -7,6 +7,17 @@ body {
 nav {
   height: 100px;
   background: rgb(49, 114, 175);
+  
+
+}
+p{display:block;
+   float:right;
+  list-style:none;
+  padding:10px;
+ 
+}
+p .arrow{
+  color:whitesmoke;
 }
 
 section {
