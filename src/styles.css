@@ -4,10 +4,66 @@ body {
   line-height: 1.5;
 }
 
-nav {
-  height: 100px;
-  background: rgb(49, 114, 175);
+/* Start style Navbar */
+
+.navigation-bar {
+  background-color: #006259;
+  overflow: hidden;
 }
+
+.logo {
+    padding: 14px 16px;
+    width: 30px;
+    height: 30px;
+}
+
+ul li {
+display: inline;
+}
+
+.navigation-bar a {
+  float: right;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.fa-envelope {
+    color: #f2f2f2;
+}
+.fa-globe {
+    color: #f2f2f2;
+}
+
+.fa-facebook {
+
+background-color:#ffffff33;
+border-bottom: white;
+border-radius: 50%;
+margin-left: 10px;
+font-size: 10px;
+}
+
+.fa-youtube {
+
+background-color:#ffffff33;
+border-bottom:  white;
+border-radius: 50%;
+margin-left: 10px;
+font-size: 10px;
+}
+
+.alatura{
+    float: right;
+    background-color: red; /* Green */
+    margin-left: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.elemente-nav{
+   margin-right: 250px;
+}
+/* End style Navbar */
 
 section {
   height: 1000px;
