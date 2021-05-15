@@ -17,3 +17,56 @@ footer {
   height: 100px;
   background: rgb(45, 51, 58);
 }
+
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  width: 20%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+} 
+
+ul li::before {
+  content: "\2022";  
+  color: greenyellow;
+  font-weight: bold;
+}
+
+.collapsible:after {
+  content: '\02C6'; 
+  font-size: 20px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\02C7";
+}
+
+#main-footer a {
+  color:white;
+  text-decoration: none;
+}
+
+#contact {
+  float: left;
+}
+
+#terms {
+  float: right;
+}
