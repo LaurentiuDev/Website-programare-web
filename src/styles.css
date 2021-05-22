@@ -1,7 +1,9 @@
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* Modificare bg dupa exemplul primit */
+    background-color: #e2e9f1;
 }
 
 
@@ -12,8 +14,6 @@ nav {
   direction: ltr;
   height: 100px;
   background: rgb(49, 114, 175);
-  
-
 }
 p{display:block;
    float:right;
@@ -413,4 +413,156 @@ footer {
   margin-left: 55px;
   color: white;
 
+}
+
+section {
+    height: 1000px;
+}
+
+footer {
+    height: 100px;
+    background: rgb(45, 51, 58);
+}
+
+
+/* Profile wrapper */
+
+#profile-wrapper {
+    border-radius: 5px;
+    padding: 30px;
+    height: 200px;
+    display: flex;
+}
+
+#profile-left {
+    background-color: white;
+    height: 388px;
+    border-radius: 15px;
+    text-align: center;
+    display: table;
+    margin-right: 30px;
+    order: 1;
+    flex: 1 2 50px;
+}
+
+#profile-right {
+    background-color: white;
+    height: 100px;
+    border-radius: 15px;
+    display: table;
+    flex: 2 2 30%;
+    order: 2;
+}
+
+#profile-right-info {
+    display: block;
+    height: 40px;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 20px;
+    font-size: 18px;
+}
+
+#profile-right-info-website {
+    display: block;
+    height: 40px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+#profile-right-info h3,
+#profile-right-info-website h3 {
+    font-size: 18px;
+    display: inline;
+    padding-right: 10px;
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* End of profile wrapper */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.container h1{
+  color:black !important;
+  font-size:48px;
+  margin-bottom: 15px;
+}
+
+.container{
+
+  font-size:10px;
+  text-align: center;
+
+}
+.progress-bar{
+
+  width:1010px;
+  height: 10px;
+  content: "";
+  opacity: 1;
+  background: #006259;
+  border-radius: 10px;
+  animation: progress-bar 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  margin-bottom: 15px;
+  font-size:2px;
+}
+
+.container-progress-bar{
+  display: flex; 
+  justify-content: center;
+ align-items: baseline;  
+}
+@keyframes progress-bar{
+20% 
+  {
+      opacity: .5;
+    
+  }
+50%
+  {
+      opacity: .7;
+  }
+60%
+  {
+   opacity: .8;
+  }
+
+70%
+  {
+   opacity: .9;
+   }
+90%
+  {
+  opacity: 1;
+  }
+  
+}
+.text{
+  margin-left:10px;
+}
+
+.continue-course-button{
+  color: white;
+  cursor: pointer;
+  background: #d40007;
+  border-radius: 5px;
+  outline: none !important;
+  border: none !important;
+  box-sizing: border-box;
+  font-size:18px;
+  padding:15px 50px;
+  margin: 0 auto;
+  display:block;
+  font-weight: 700;
+}
+.btn:hover{
+  opacity: 0.8;
+  transition:0.3s;
 }
