@@ -1,6 +1,5 @@
 body {
   margin: 0;
-
 }
 /* Start style Navbar */
 .nav {
@@ -12,9 +11,9 @@ body {
   display: inline;
 }
 
-.logo{
-  width: 100px; 
-  height: 60px; 
+.logo {
+  width: 100px;
+  height: 60px;
   position: absolute;
   margin-top: 15px;
   margin-left: 15px;
@@ -24,48 +23,94 @@ body {
   float: right;
   font-size: 18px;
   margin-top: 20px;
-  
 }
 
 .nav > .nav-links > a {
- 
   padding: 15px;
   text-decoration: none;
   color: #efefef;
 }
 
 .fa-youtube {
-
-  background-color:#ffffff33;
-  font-size: 18px;
-  border-bottom:  white;
-  border-radius: 50%;
-  
-}
-
-.fa-facebook {
-
-  background-color:#ffffff33;
+  background-color: #ffffff33;
   font-size: 18px;
   border-bottom: white;
   border-radius: 50%;
-  
 }
 
-.alatura{
+.fa-facebook {
+  background-color: #ffffff33;
+  font-size: 18px;
+  border-bottom: white;
+  border-radius: 50%;
+}
 
+.alatura {
   background-color: red;
   font-size: 18px;
-  border-radius: 5px;   
+  border-radius: 5px;
   margin-left: 30px;
   margin-right: 50px;
 }
 
 /* End style Navbar */
 
-section {
-  height: 1000px;
+
+
+/* Start style section search */
+.section-search {
+  background-color: #f2f2f2;
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+  padding: 30px 30px 30px 30px;
+  width: 600px;
+  
 }
+.search-container p {
+  margin-left: 50px;
+}
+.search-container {
+  background-color: #fff;
+  font-size: 25px;
+  padding: 30px 30px 5px 5px;
+  border: 1p;
+  height: 230px;
+  
+}
+.form {
+  border: 2px;
+  padding-top: 5px;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+.search-button {
+  background-color: #1E90FF;
+  border: none;
+  color: white;
+  padding: 18px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline;
+}
+
+#search-box input[type="text"] {
+  width: 50%;
+  padding: 15px;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 20px;
+  color: black;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+}
+
+/* End style section search */
+
+/* section {
+  height: 1000px;
+} */
 
 footer {
   height: 100px;
