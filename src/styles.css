@@ -416,9 +416,6 @@ footer {
   color: white;
 
 }
-section {
-    height: 1000px;
-}
 
 footer {
     height: 100px;
@@ -649,7 +646,7 @@ footer {
   transform: translate(-50%);
   margin-top: 25px;
 }
-.login_btn input {
+.login_btn button {
   height: 40px;
   width: 80%;
   margin: 0 45px;
@@ -658,6 +655,7 @@ footer {
   color: #fff;
   font-weight: bold;
   font-size: 14pt;
+  padding: 10px 16px;
 }
 
 .signup_var {

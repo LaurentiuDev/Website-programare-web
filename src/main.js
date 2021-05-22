@@ -4,15 +4,16 @@
 
 //   }
 
-const logi = document.getElementById("log");
+const loginButton = document.getElementById("login-button");
 
-logi.addEventListener("click", function () {
-  const username = document.getElementById("usrname").value;
-  const password = document.getElementById("usrpass").value;
-  conectare(username, password);
-  document.getElementById("user_contact").innerHTML = username;
-  console.log(username);
-});
+if (loginButton) {
+  loginButton.addEventListener("click", function () {
+    const username = document.getElementById("usrname").value;
+    const password = document.getElementById("usrpass").value;
+    conectare(username, password);
+    window.sessionStorage.setItem("username", username);
+  });
+}
 
 function conectare(username, password) {
   if (username == "andrei") {
@@ -21,5 +22,19 @@ function conectare(username, password) {
     }
   } else {
     alert("Username sau parola gresita!");
+  }
+}
+
+initUsername();
+
+function initUsername() {
+  const username = window.sessionStorage.getItem("username");
+
+  if (username) {
+    const usernameText = document.getElementById("username-text");
+    
+    if(usernameText) {
+      document.getElementById("username-text").innerHTML = username;
+    }
   }
 }
