@@ -24,6 +24,7 @@ p{display:block;
 p .arrow{
   color:whitesmoke;
 }
+
 /*Start Signature*/
 .signature {
   display: flex;
@@ -146,6 +147,7 @@ p .arrow{
    height: 30px;
    width: 100px;
    margin-top: 30px;
+   margin-right: 30px;
  }
  .caret{
    display:flex;
@@ -174,8 +176,8 @@ p .arrow{
    border-radius: 4px;
    width: 150px;
    position: absolute;
-   margin-top: 50px;
-   right: 60px;
+   margin-top: 35px;
+   right: 40px;
    visibility: hidden;
    padding: 2px;
    color: black;
@@ -414,7 +416,6 @@ footer {
   color: white;
 
 }
-
 section {
     height: 1000px;
 }
@@ -565,4 +566,134 @@ footer {
 .btn:hover{
   opacity: 0.8;
   transition:0.3s;
+}
+
+/*Login page CSS*/
+
+.section-log{
+  height: 830px;
+  width: auto;
+  background: linear-gradient(120deg, #4686b1, #8e44ad);
+  display:flex;
+  align-items: center;
+}
+
+.logcase {
+  position: absolute;
+  width: 450px;
+  height: 830px;
+  background: white;
+  left: 50%;
+  transform: translate(-50%);
+}
+.logcase h1 {
+  text-align: center;
+  margin: 12%;
+}
+.logcase form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.frm .text-field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0px;
+}
+.frm .text-field2 {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 8px 0px;
+}
+
+.text-field input {
+  width: 100%;
+  padding: 0px 25px;
+  height: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 13pt;
+}
+.text-field2 input {
+  width: 100%;
+  padding: 0px 25px;
+  height: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 13pt;
+}
+.text-field img {
+  position: absolute;
+  height: 15px;
+  top: 50%;
+}
+.text-field2 img {
+  position: absolute;
+  height: 15px;
+  top: 50%;
+}
+
+.forpass {
+  text-align: right;
+  margin-right: 20px;
+}
+.forpass a {
+  color: black;
+  text-decoration: none;
+}
+
+.login_btn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 25px;
+}
+.login_btn input {
+  height: 40px;
+  width: 80%;
+  margin: 0 45px;
+  border-radius: 50px;
+  background: linear-gradient(120deg, #4686b1, #8e44ad);
+  color: #fff;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.signup_var {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  height: 20px;
+  width: 50%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.social {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  height: 40px;
+  width: 35%;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
+.social img {
+  height: 40px;
+  width: 40px;
+}
+
+.signup {
+  width: 100px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.signup a {
+  text-decoration: none;
+  font-weight: bold;
 }
