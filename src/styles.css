@@ -72,12 +72,12 @@ section {
   margin: 0;
 }
 /* Start style Navbar */
-.nav {
+nav {
   height: 90px;
   background-color: #006259;
 }
 
-.nav > .nav-header {
+nav > .nav-header {
   display: inline;
 }
 
@@ -89,13 +89,13 @@ section {
   margin-left: 15px;
 }
 
-.nav > .nav-links {
+nav > .nav-links {
   float: right;
   font-size: 18px;
   margin-top: 20px;
 }
 
-.nav > .nav-links > a {
+nav > .nav-links > a {
   padding: 15px;
   text-decoration: none;
   color: #efefef;
