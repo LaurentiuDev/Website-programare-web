@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  /* Modificare bg dupa exemplul primit */
+  background-color: #e2e9f1;
+}
+
+nav {
+  height: 90px;
+  background-color: #006259;
+}
+
+section {
+  height: 1000px;
+  margin: 0;
+}
+
+/* Profile wrapper */
+
+#profile-wrapper {
+  border-radius: 5px;
+  padding: 30px;
+  height: 200px;
+  display: flex;
+}
+
+#profile-left {
+  background-color: white;
+  height: 388px;
+  border-radius: 15px;
+  text-align: center;
+  display: table;
+  margin-right: 30px;
+  order: 1;
+  flex: 1 2 50px;
+}
+
+#profile-right {
+  background-color: white;
+  height: 100px;
+  border-radius: 15px;
+  display: table;
+  flex: 2 2 30%;
+  order: 2;
+}
+
+#profile-right-info {
+  display: block;
+  height: 40px;
+  border-bottom: 1px solid #d6d6d6;
+  margin: 20px;
+  font-size: 18px;
+}
+
+#profile-right-info-website {
+  display: block;
+  height: 40px;
+  margin: 20px;
+  font-size: 18px;
+}
+
+#profile-right-info h3,
+#profile-right-info-website h3 {
+  font-size: 18px;
+  display: inline;
+  padding-right: 10px;
+}
+
+#avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* End of profile wrapper */
+
+footer {
+  height: 100px;
+  background: rgb(45, 51, 58);
+}
