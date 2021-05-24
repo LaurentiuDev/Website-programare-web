@@ -5,17 +5,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Website programare web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>AlgoFlow</title>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="./src/styles.css">
 </head>
 
 <body>
+  <!-- Create Navbar Mihaela -->
   <nav>
-    
+    <div class="nav-header">
+      <div class="nav-title">
+        <img class="logo" src="./src/images/logo.png">
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="#cursul-meu" class="fa fa-globe" > Cursul meu</a>
+      <a href="#playground" class="fa fa-envelope" > Playground</a>
+      <a href="#button-fb" class="fa fa-facebook" ></a>
+      <a href="#button-youtube" class="fa fa-youtube" ></a>
+      <a href="#alatura" class="alatura" target="_blank">Alatura-te Academiei!</a>
+    </div>
+    <div>
   </nav>
 
   <section>
+    <div class="container">
+      <h1 >Introducere în programare cu JavaScript</h1>
+
+      <div class="container-progress-bar ">
+        <div class="progress-bar"> 
+           </div>
+        <div class="text">
+          <span>100%</span>
+        </div>
+      </div>
+    </div>
+    <button class="continue-course-button">Continua cursul</button>
+
+    <div class="section-search">
+      <div class="search-container"> 
+        <p> Cauta Pagina <i class="fa fa-search"></i></p>
+        <hr>
+      
+        <div class="search-form" id="search-box">
+          <form class="form" id="form" action="/action_page.php">
+            <input id='search-text'type="text" placeholder="Problema sau lectie.." name="search">
+            <button id='search-button' class ="search-button " type="submit"> <span>Cauta</span> </button>
+          </form>
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -23,7 +64,9 @@
 
   </footer>
 
-  <script src="./src/main.js"></script>
+  <script src="./src/main.js">
+  
+  </script>
 </body>
 
 </html>

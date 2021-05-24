@@ -1,0 +1,413 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #e2e9f1;
+}
+
+.headbar {
+  display: flex;
+  flex-direction: row;
+  direction: ltr;
+  height: 100px;
+  background: rgb(49, 114, 175);
+}
+
+/*Start Signature*/
+
+.signature {
+  display: flex;
+  height: 100px;
+  width: 15%;
+  margin: 0 20px;
+  justify-content: flex-start;
+}
+
+#texticon {
+  height: 90px;
+  width: 130px;
+  margin: 0 10px;
+}
+
+#texticon img {
+  display: flex;
+  height: 80px;
+  width: 80px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+#texticon h1 {
+  display: flex;
+  height: 80px;
+  width: 100px;
+  text-align: left;
+  font-size: 18pt;
+  text-shadow: 0 0 1px white;
+  color: white;
+  margin: 15px 0;
+  padding-left: 5px;
+}
+/*End Signature*/
+
+/*Start BTN Cursul meu si Playground*/
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.btn-group .button {
+  background-color: rgb(49, 114, 175);
+  border: none;
+  color: white;
+  padding: 18px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  height: 100px;
+}
+
+.btn-group .button:hover {
+  background-color: rgb(42, 102, 158);
+}
+
+.btn-group .button img {
+  width: 15px;
+  height: 12px;
+  padding: 0;
+  margin-right: 4px;
+  line-height: 1;
+  color: #fff;
+}
+
+/*End BTN Cursul meu si Playground*/
+
+/*Start Social Media Buttons*/
+
+.social-media {
+  display: flex;
+  width: auto;
+  height: 50px;
+  margin-top: 30px;
+  padding-left: 20px;
+  justify-content: flex-end;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin: 5px;
+  background: rgb(49, 114, 175);
+}
+
+/*End Social Media Buttons*/
+
+/*Start Academie Button*/
+
+.btn-academ {
+  display: flex;
+  margin: 25px;
+  height: 50px;
+  display: block;
+}
+
+.btn-academ button {
+  background-color: #d40007;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12pt;
+  cursor: pointer;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.btn-academ :hover {
+  background-color: #d32f2f;
+}
+
+/*End Academie Button*/
+
+.popover {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  width: 100px;
+  margin-top: 30px;
+}
+
+.caret {
+  display: flex;
+  flex-direction: row;
+}
+
+.popover h1 {
+  height: 30px;
+  width: 50%;
+  width: auto;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+}
+
+.popover img {
+  height: 10px;
+  width: 15px;
+  margin-left: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  width: 150px;
+  position: absolute;
+  margin-top: 50px;
+  right: 60px;
+  visibility: hidden;
+  padding: 2px;
+  color: black;
+  background: white;
+  z-index: 1;
+  text-align: center;
+  padding: 1px 10px;
+  box-shadow: 2px 2px 10px #adadad;
+}
+
+.popover:hover .content {
+  visibility: visible;
+}
+
+.contact-section {
+  display: flex;
+  height: 1000px;
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  margin-left: 200px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.txtarea {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 100px;
+  margin-top: 120px;
+}
+
+.txtarea textarea {
+  display: flex;
+  border-radius: 5px;
+  width: min-content(1200px);
+  height: 200px;
+  padding-top: 10px;
+}
+
+.txtarea h4 {
+  margin-bottom: 10px;
+  color: rgb(37, 37, 37);
+  font-weight: normal;
+}
+
+.contact p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14pt;
+  padding: 20px 0;
+  color: gray;
+}
+
+.contact h1 {
+  font-size: 25pt;
+}
+
+.txtarea button {
+  border: none;
+  background-color: rgba(7, 177, 245, 0.986);
+  width: 110px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 15pt;
+  margin-top: 10px;
+  color: rgb(43, 41, 41);
+}
+
+.txtarea button:hover {
+  background-color: rgba(6, 164, 226, 0.986);
+}
+
+#ytb {
+  border: none;
+  background-color: #ff0000;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  margin: 5px 0;
+  cursor: pointer;
+  color: white;
+  font-size: 11pt;
+}
+
+#ytb:hover {
+  background-color: rgb(236, 3, 3);
+}
+
+#imgytb {
+  width: 18px;
+  height: 18px;
+  margin-bottom: -5px;
+}
+
+#fb {
+  border: none;
+  background-color: #4267b2;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  margin: 5px 0;
+  cursor: pointer;
+  color: white;
+  font-size: 11pt;
+}
+
+#fb:hover {
+  background-color: #3c588b;
+}
+
+#imgfb {
+  width: 20px;
+  height: 20px;
+  margin-bottom: -5px;
+  background-color: white;
+}
+
+#insta {
+  border: none;
+  background: rgb(245, 133, 41);
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 11pt;
+}
+
+#insta:hover {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  opacity: 0.9;
+}
+
+#imginsta {
+  width: 20px;
+  height: 20px;
+  margin-bottom: -5px;
+}
+
+footer {
+  height: 100px;
+  background: rgb(45, 51, 58);
+}
+
+.links ul {
+  display: flex;
+  list-style-type: none;
+  list-style-position: inside;
+  flex-direction: row;
+  margin: 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+#cntct {
+  display: flex;
+  height: 20px;
+  width: 60px;
+  text-align: center;
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+#term {
+  display: flex;
+  height: 20px;
+  width: 130px;
+  text-align: center;
+  padding: 0 10px;
+  border-right: 1px solid white;
+}
+
+#pol {
+  display: flex;
+  height: 20px;
+  width: 150px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.copyright {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  color: white;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+footer .container .links {
+  display: flex;
+}
