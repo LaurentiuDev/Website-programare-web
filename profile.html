@@ -14,10 +14,10 @@
 
 <body>
     <nav>
-        <div class="top-navbar" role="navigation">
+        <div class="top-navbar" role="navigation" id="top-navigation">
             <div class="name-navbar">
                 <ul>
-                    <li class="nav-top-button"><a href="#" class="name-button"><span>John Doe</span><i class="arrow-down"></i></a></li>
+                    <li class="nav-top-button"><a href="#" class="name-button" onclick="showProfile();"><span>John Doe</span><i class="arrow-down"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -49,7 +49,7 @@
     </section>
 
 
-    <div class="popover fade.in">
+    <div class="popover fade.in" id="popover-div">
         <div class="popover-arrow"></div>
         <h3 class="popover-title">
             <p>Salut, <span>John!</span></p>
