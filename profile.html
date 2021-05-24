@@ -2,16 +2,29 @@
 <html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Website programare web</title>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./src/profile.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Website programare web</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./src/profile.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
-    <nav></nav>
+    <nav>
+        <div class="top-navbar" role="navigation" id="top-navigation">
+            <div class="name-navbar">
+                <ul>
+                    <li class="nav-top-button"><a href="#" class="name-button" id="name-button" onclick="showProfileOptions();"><span>John Doe</span><i class="arrow-down"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section>
         <!--Profile wrapper content-->
@@ -37,6 +50,17 @@
         </div>
         <!-- End of Profile wrapper content-->
     </section>
+
+
+    <div class="popover fade.in" id="popover-div">
+        <div class="popover-arrow"></div>
+        <h3 class="popover-title">
+            <p>Salut, <span>John!</span></p>
+        </h3>
+        <div class="popover-content">
+            <div class="buton-group"><a href="#" class="buton-main buton-main-profil"><i class="fa fa-user-circle-o"> </i> Profilul meu</a><a href="#" class="buton-main buton-main-logout"><i class="fa fa-sign-out"></i> Deloghează-te</a></div>
+        </div>
+    </div>
 
     <footer></footer>
 
