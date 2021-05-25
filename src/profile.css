@@ -1,0 +1,229 @@
+/* Page defaults */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* Modificare bg dupa exemplul primit */
+    background-color: #e2e9f1;
+}
+
+nav {
+    height: 90px;
+    background-color: #006259;
+}
+
+section {
+    height: 1000px;
+    margin: 0;
+}
+
+footer {
+    height: 100px;
+    background: rgb(45, 51, 58);
+}
+
+
+/* End Page defaults */
+
+
+/* Profile wrapper */
+
+#profile-wrapper {
+    border-radius: 5px;
+    padding: 30px;
+    height: 200px;
+    display: flex;
+}
+
+#profile-left {
+    background-color: white;
+    height: 388px;
+    border-radius: 15px;
+    text-align: center;
+    display: table;
+    margin-right: 30px;
+    order: 1;
+    flex: 1 2 50px;
+}
+
+#profile-right {
+    background-color: white;
+    height: 100px;
+    border-radius: 15px;
+    display: table;
+    flex: 2 2 30%;
+    order: 2;
+}
+
+#profile-right-info {
+    display: block;
+    height: 40px;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 20px;
+    font-size: 18px;
+}
+
+#profile-right-info-website {
+    display: block;
+    height: 40px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+#profile-right-info h3,
+#profile-right-info-website h3 {
+    font-size: 18px;
+    display: inline;
+    padding-right: 10px;
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* End of profile wrapper */
+
+
+/*Top NavBar*/
+
+.top-navbar {
+    max-width: 1550px;
+    width: 95%;
+    margin: auto;
+    font-family: Open Sans, Helvetica, sans-serif;
+    padding-right: 20px;
+}
+
+.name-navbar {
+    float: right;
+    padding-top: 10px;
+}
+
+.name-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.name-navbar li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.name-button {
+    color: white;
+    text-decoration: none;
+}
+
+.name-button span {
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.arrow-down {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    vertical-align: text-top;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.popover {
+    position: absolute;
+    padding: 12px;
+    font-size: 14px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 4px;
+    filter: drop-shadow(0 1px 8px rgba(0, 0, 0, .12));
+    display: none;
+    /*left: 1062.25px;*/
+    top: 50px;
+}
+
+.popover-arrow {
+    border: solid white;
+    border-width: 0 10px 10px 6px;
+    display: block;
+    padding: 3px;
+    vertical-align: text-top;
+    transform: rotate(222deg);
+    -webkit-transform: rotate(222deg);
+    margin-top: -19px;
+    margin-left: 180px;
+}
+
+.popover-title {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.popover-title p {
+    font-size: 1.1rem;
+    color: #212121;
+    width: 200px;
+    padding-bottom: .5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.popover-title span {
+    font-weight: 500;
+}
+
+.popover-content {
+    margin-top: 8px;
+}
+
+.buton-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.fade.in {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.buton-main {
+    border: none;
+    overflow: visible;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buton-main-profil {
+    color: #004a45;
+    background-color: transparent;
+    border: 1px solid #004a45;
+}
+
+.buton-main-profil:hover {
+    background-color: #deebeb;
+}
+
+.buton-main-logout {
+    color: #fff;
+    background-color: #43c1bb;
+}
+
+.buton-main-logout:hover {
+    background-color: #219e98;
+}
+
+
+/*End of Top NavBar*/
