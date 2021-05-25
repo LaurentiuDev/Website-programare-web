@@ -2,71 +2,143 @@
 <html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>AlgoFlow</title>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./src/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Website Programare Web</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 
 <body>
-  <!-- Create Navbar Mihaela -->
-  <nav>
-    <div class="nav-header">
-      <div class="nav-title">
-        <img class="logo" src="./src/images/logo.png">
-      </div>
-    </div>
-
-    <div class="nav-links">
-      <a href="#cursul-meu" class="fa fa-globe" > Cursul meu</a>
-      <a href="#playground" class="fa fa-envelope" > Playground</a>
-      <a href="#button-fb" class="fa fa-facebook" ></a>
-      <a href="#button-youtube" class="fa fa-youtube" ></a>
-      <a href="#alatura" class="alatura" target="_blank">Alatura-te Academiei!</a>
-    </div>
-    <div>
-  </nav>
-
-  <section>
-    <div class="container">
-      <h1 >Introducere în programare cu JavaScript</h1>
-
-      <div class="container-progress-bar ">
-        <div class="progress-bar"> 
-           </div>
-        <div class="text">
-          <span>100%</span>
+    <!-- Create Navbar Mihaela -->
+    <nav>
+        <div class="nav-header">
+            <div class="nav-title">
+                <img class="logo" src="./src/images/logo.png">
+            </div>
         </div>
-      </div>
-    </div>
-    <button class="continue-course-button">Continua cursul</button>
 
-    <div class="section-search">
-      <div class="search-container"> 
-        <p> Cauta Pagina <i class="fa fa-search"></i></p>
-        <hr>
-      
-        <div class="search-form" id="search-box">
-          <form class="form" id="form" action="/action_page.php">
-            <input id='search-text'type="text" placeholder="Problema sau lectie.." name="search">
-            <button id='search-button' class ="search-button " type="submit"> <span>Cauta</span> </button>
-          </form>
+        <div class="nav-links">
+            <a href="#cursul-meu" class="fa fa-globe"> Cursul meu</a>
+            <a href="#playground" class="fa fa-envelope"> Playground</a>
+            <a href="#button-fb" class="fa fa-facebook"></a>
+            <a href="#button-youtube" class="fa fa-youtube"></a>
+            <a href="#alatura" class="alatura" target="_blank">Alatura-te Academiei!</a>
         </div>
-      </div>
-    </div>
+        <div>
+    </nav>
 
-  </section>
+    <section>
+        <div class="container">
+            <h1>Introducere în programare cu JavaScript</h1>
 
-  <footer>
+            <div class="container-progress-bar ">
+                <div class="progress-bar">
+                </div>
+                <div class="text">
+                    <span>100%</span>
+                </div>
+            </div>
+        </div>
+        <button class="continue-course-button">Continua cursul</button>
 
-  </footer>
+        <div class="section-search">
+            <div class="search-container">
+                <p> Cauta Pagina <i class="fa fa-search"></i></p>
+                <hr>
 
-  <script src="./src/main.js">
-  
-  </script>
+                <div class="search-form" id="search-box">
+                    <form class="form" id="form" action="/action_page.php">
+                        <input id='search-text' type="text" placeholder="Problema sau lectie.." name="search">
+                        <button id='search-button' class="search-button " type="submit"> <span>Cauta</span> </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--List courses-->
+    <section id="list-courses">
+
+        <div class="coursesWrapper">
+            <div class="cousres-intro">Este recomandat să faci cursul pe un calculator!</div>
+
+            <button class="collapsible-courses "><i class="greenBulletIconBig fa fa-circle" ></i> Introducere</button>
+            <div class="list-courses">
+                <div class="list-coursesDiv">
+                    <i class="greenBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line"></div><span class="list-courses-title"> Ce o să înveți în cursul acesta?</span></div>
+                <div class="list-coursesDiv">
+                    <i class="greenBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line"></div><span class="list-courses-title"> De ce JavaScript?</span></div>
+                <div class="list-coursesDiv">
+                    <i class="greenBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line"></div><span class="list-courses-title"> Exercițiu interactiv: Salut lume!</span></div>
+            </div>
+            <button class="collapsible-courses "><i class="greenBulletIconBig fa fa-circle"></i> Funcții</button>
+            <div class="list-courses">
+                <div class="list-coursesDiv">
+                    <i class="greenBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line"></div><span class="list-courses-title"> Cum funcționează un calculator?</span></div>
+                <div class="list-coursesDiv">
+                    <i class="greenBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line"></div><span class="list-courses-title"> Inteligența calculatoarelor</span></div>
+                <div class="list-coursesDiv">
+                    <i class="greenBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line"></div><span class="list-courses-title"> Sintaxa JavaScript</span></div>
+            </div>
+            <button class="collapsible-courses "><i class="greenBulletIconBig fa fa-circle"></i> Expresii, operatori, comparatori</button>
+            <div class="list-courses">
+                <div class="list-coursesDiv">
+                    <i class="greenBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line"></div><span class="list-courses-title"> Expresii și operatori matematici</span></div>
+                <div class="list-coursesDiv">
+                    <i class="greenBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line"></div><span class="list-courses-title"> Exercițiu interactiv: suma a două numere</span></div>
+                <div class="list-coursesDiv">
+                    <i class="greenBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line"></div><span class="list-courses-title"> Ordinea efectuării operațiilor</span></div>
+                <div class="list-coursesDiv">
+                    <i class="greenBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line"></div><span class="list-courses-title"> Quiz ordinea efectuării operațiilor</span></div>
+            </div>
+            <button class="collapsible-courses locked"><i class="grayBulletIconBig fa fa-lock"></i> Structuri repetitive</button>
+            <div class="list-courses">
+                <div class="list-coursesDiv">
+                    <i class="grayBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line-gray"></div><span class="list-courses-title"> <i class="fa fa-lock"></i> Introducere în structuri repetitive</span></div>
+                <div class="list-coursesDiv">
+                    <i class="grayBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line-gray"></div><span class="list-courses-title"> <i class="fa fa-lock"></i> Structuri repetitive și condiționale</span></div>
+                <div class="list-coursesDiv">
+                    <i class="grayBulletIcon fa fa-circle"></i>
+                    <div class="list-courses-line-gray"></div><span class="list-courses-title"> <i class="fa fa-lock"></i> Exercițiu interactiv: FizzBuzz</span></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End of List courses-->
+
+    <footer>
+        <div class="footerDiv">
+            <div class="footerLinks">
+                <div class="footerLinkWrapper"><a href="#" class="footerLink">Contact</a> | </div>
+                <div class="footerLinkWrapper"><a href="#" class="footerLink">Termeni și condiții</a> | </div>
+                <div class="footerLinkWrapper"><a href="#" class="footerLink">Politica de cookies</a></div>
+            </div>
+            <div class="footerCopyright">Copyright © 2021 Invata programare logic, practic si intelegand codul scris. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="./src/main.js">
+    </script>
 </body>
+
+
 
 </html>
