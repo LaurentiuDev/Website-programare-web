@@ -12,7 +12,7 @@ function getElementPosition(id) {
 function showProfileOptions() {
     let button = document.getElementById('name-button');
     let divHide = document.getElementById('popover-div');
-    var TopRight = getElementPosition("top-navigation");
+    let TopRight = getElementPosition("top-navigation");
 
     // default values
     divHide.style.display = 'block';
@@ -29,6 +29,25 @@ function showProfileOptions() {
 
 }
 /* End of show/hide profile options on the top right corner */
+
+/* Collapsable function for courses*/
+let coll = document.getElementsByClassName("collapsible-courses");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+/* end of Collapsable function for courses*/
+
+
 
 document.getElementById("here").addEventListener("click", myFunction);
 
