@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #e2e9f1;
+  }
+
+/*Login page CSS*/
+
+.section-log{
+    height: 830px;
+    width: auto;
+    background: linear-gradient(120deg, #4686b1, #8e44ad);
+    display:flex;
+    align-items: center;
+  }
+  
+  .logcase {
+    position: absolute;
+    width: 450px;
+    height: 830px;
+    background: white;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .logcase h1 {
+    text-align: center;
+    margin: 12%;
+  }
+  .logcase form {
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .frm .text-field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0px;
+  }
+  .frm .text-field2 {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 8px 0px;
+  }
+  
+  .text-field input {
+    width: 97%;
+    padding: 0px 25px;
+    height: 40px;
+    border: none;
+    text-decoration: none;
+    background: transparent;
+    outline: none;
+    font-size: 13pt;
+  }
+  .text-field2 input {
+    width: 100%;
+    padding: 0px 25px;
+    height: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 13pt;
+  }
+  .text-field img {
+    position: absolute;
+    height: 15px;
+    top: 50%;
+  }
+  .text-field2 img {
+    position: absolute;
+    height: 15px;
+    top: 50%;
+  }
+  
+  .forpass {
+    text-align: right;
+    margin-right: 20px;
+  }
+  .forpass a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .login_btn {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 25px;
+  }
+  #login-button {
+    height: 40px;
+    width: 80%;
+    margin: 0 45px;
+    border-radius: 50px;
+    background: linear-gradient(120deg, #4686b1, #8e44ad);
+    color: #fff;
+    font-weight: bold;
+    font-size: 14pt;
+  }
+  
+  .signup_var {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 20px;
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .social {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 40px;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 150px;
+  }
+  
+  .social img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .signup {
+    width: 100px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+  }
+  
+  .signup a {
+    text-decoration: none;
+    font-weight: bold;
+  }

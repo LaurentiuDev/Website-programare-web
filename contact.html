@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Website programare web</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./src/contact.css" />
   </head>
 
   <body>
-    <nav class="headbar">
+    <nav class="headbar" id="top-navigation">
       <div class="signature">
         <div id="texticon" class="signature">
           <img src="src/images/logo.png" alt="logo" />
@@ -19,10 +20,10 @@
       </div>
       <div class="btn-group">
         <button class="button">
-          <img src="src/images/agenda.png" alt="Agenda" /> Cursul meu
+          <i class="fa fa-book"></i> Cursul meu
         </button>
         <button class="button">
-          <img src="src/images/icon-code.png" alt="code" /> Playground
+          <i class="fa fa-code"></i> Playground
         </button>
       </div>
       <div class="social-media">
@@ -35,19 +36,21 @@
         /></a>
       </div>
       <div class="btn-academ"><button>Alătură-te Academiei!</button></div>
+
       <div class="popover">
-        <div class="caret">
-        <h1 id="username-text"></h1>
+        <div class="caret" id="name-button" onclick="showProfileOptions();">
+        <h1 id="username-text">Username</h1>
         <img src="src/images/caret-down.png" alt="caret">
       </div>
-      <div class="content">
-        <div class="title">
+      <div class="content" id="popover-div" display="none">
+        <div class="arrow up"></div>
+        <div class="title-popover">
           <div>
-            <p>Salut, <b>Marian Vicsoreanu</b></p>
+            <p>Salut, <b id="username-popover"> Username</b></p>
           </div>
           <div class="popover-body">
             <button class="btn1">Profilul Meu</button>
-                <button class="btn2">Deloghează-te</button>
+                <button class="btn2" id="button-logout">Deloghează-te</button>
           </div>
         </div>
       </div>
