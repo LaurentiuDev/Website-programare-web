@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/login.css" />
+  </head>
+
+  <body>
+    <section class="section-log">
+      <div class="logcase">
+        <h1>Login</h1>
+        <div class="frm">
+          <form
+            id="frm1"
+            name="logform"
+            action=""
+          >
+            <div class="text-field">
+              <label>Username</label>
+              <input
+                type="text"
+                placeholder="Type your username"
+                id="usrname"
+              />
+              <img src="src/images/user.png" alt="user" />
+            </div>
+            <div class="text-field2">
+              <label>Password</label>
+              <input
+                type="password"
+                placeholder="Type your password"
+                maxlength="12"
+                id="user-password"
+              />
+              <img src="src/images/padlock.png" alt="user" />
+            </div>
+
+            <div class="forpass">
+              <a href="#">Forgot password?</a>
+            </div>
+            <div class="login_btn">
+              <button id="login-button">Login</button>
+            </div>
+          </form>
+          <div class="signup_var">Or Sign Up Using</div>
+        </div>
+        <div class="social">
+          <a href="#"> <img src="src/images/facebook.png" alt="Facebook" /></a>
+          <a href="#"> <img src="src/images/twitter.png" alt="Twitter" /></a>
+          <a href="#"> <img src="src/images/google-plus.png" alt="Google" /></a>
+        </div>
+
+        <div class="signup_var">Or Sign Up Using</div>
+        <div class="signup">
+          <a href="#">SIGN UP</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
