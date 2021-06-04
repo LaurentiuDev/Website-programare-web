@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-    height: 90px;
+    height: 60px;
     background-color: #006259;
 }
 
@@ -100,7 +100,8 @@ footer {
 
 .name-navbar {
     float: right;
-    padding-top: 10px;
+    padding-top: 17px;
+    min-width: 100px;
 }
 
 .name-navbar ul {
@@ -156,8 +157,8 @@ footer {
     vertical-align: text-top;
     transform: rotate(222deg);
     -webkit-transform: rotate(222deg);
-    margin-top: -19px;
-    margin-left: 180px;
+    margin-top: -15px;
+    margin-left: 176px;
 }
 
 .popover-title {
@@ -223,6 +224,72 @@ footer {
 
 .buton-main-logout:hover {
     background-color: #219e98;
+}
+
+.nav-main {
+    display: flex;
+}
+
+.nav-main a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-logo {
+    height: 46px;
+    display: flex;
+    padding: 5px 0px 0 50px;
+    float: left;
+    width: -webkit-fill-available;
+}
+
+.nav-button button {
+    max-width: 200px;
+    font-size: 1rem;
+    width: 100%;
+    font-weight: bold;
+    margin: 0.5rem 0.75rem;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    background-color: red !important;
+    color: white !important;
+}
+
+.nav-curs {
+    min-width: 110px;
+    color: white;
+    padding: 18px;
+    height: 24px;
+}
+
+.nav-curs:hover {
+    background-color: #004c45;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-play {
+    min-width: 110px;
+    color: white;
+    padding: 18px;
+    height: 24px;
+}
+
+.nav-play:hover {
+    background-color: #004c45;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-social {
+    color: white;
+    padding: 12px;
+    transform: scale(0.8);
+    min-width: 120px;
+}
+
+.nav-social i {
+    padding-right: 20px;
 }
 
 
