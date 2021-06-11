@@ -103,7 +103,8 @@ ul li {
 
 section {
  display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  align-items: center;
   height: 1000px;
   margin: 0;
 }
@@ -168,16 +169,16 @@ nav>.nav-links>a {
   width: 60vw;
   height: 100vh;
   margin-left: 20px;
-  margin-top: 100px;
+  margin-top: 20px;
   border-radius: 10px;
 }
 
 /* Start style section search */
 
 .section-search {
-  margin: 30px;
-  margin-top: 100px;
-  width: 33vw;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 60vw;
   height: 30vh;
 }
 
@@ -199,7 +200,7 @@ nav>.nav-links>a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 29vw;
+  width: 100%;
   height: 15vh;
   border: 2px;
   padding-top: 5px;
@@ -222,7 +223,7 @@ nav>.nav-links>a {
 #search-box input[type="text"] {
   width: 60%;
   padding: 15px;
-  margin-left: 10px;
+  margin-left: 80px;
   height: 20px;
   font-size: 20px;
   color: black;
