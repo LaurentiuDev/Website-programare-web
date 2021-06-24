@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Website Programare Web</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/formular-de-înregistrare.css">
+    
+</head>
+
+    <!-- Create Navbar Mihaela -->
+    <nav class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                <div class="nav-logo-top">
+                    <a href="index.html"><img src="images/logo.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="#cursul-meu" class="fa fa-globe"> Cursul meu</a>
+            <a href="#playground" class="fa fa-envelope"> Playground</a>
+            <a href="#button-fb" class="fa fa-facebook"></a>
+            <a href="#button-youtube" class="fa fa-youtube"></a>
+            <a href="#alatura" class="alatura" target="_blank">Alatura-te Academiei!</a>
+        </div>
+    </nav>
+
+
+    <script>
+
+        function showFormData()
+        {
+            document.getElementById("p1").innerHTML =  window.sessionStorage.getItem("nume");
+            document.getElementById("p2").innerHTML =  window.sessionStorage.getItem("email");
+            document.getElementById("p3").innerHTML =  window.sessionStorage.getItem("telefon");
+            document.getElementById("p4").innerHTML =  window.sessionStorage.getItem("adresa");
+            document.getElementById("p5").innerHTML =  window.sessionStorage.getItem("oras");
+            document.getElementById("p6").innerHTML =  window.sessionStorage.getItem("optiune");
+            document.getElementById("p7").innerHTML =  window.sessionStorage.getItem("cui");
+            document.getElementById("p8").innerHTML =  window.sessionStorage.getItem("nume-firma");
+        }   
+      function testVariable() {
+
+            if (validateForm() == true)
+            {
+                window.sessionStorage.setItem( "email", document.getElementById("email").value);
+                window.sessionStorage.setItem( "nume", document.getElementById("nume").value);
+                window.sessionStorage.setItem( "telefon", document.getElementById("telefon").value);
+                window.sessionStorage.setItem( "adresa", document.getElementById("adresa").value);
+                window.sessionStorage.setItem( "oras", document.getElementById("oras").value);
+                window.sessionStorage.setItem( "optiune", document.getElementById("optiune").value);
+                window.sessionStorage.setItem( "cui", document.getElementById("cui").value);
+                window.sessionStorage.setItem( "nume-firma", document.getElementById("nume-firma").value);
+
+                showFormData();
+                
+            }
+            
+        }
+    </script>
+
+                
+    <script>
+        const submitButton = document.getElementById("btnSubmit");
+
+            if (submitButton) {
+                submitButton.addEventListener("click", function () {
+                window.alert("Felicitari! V-ati inregistrat cu succes");
+                    `${}`
+                        //window.alert('<?php echo $text; ?>'); 
+                });
+                }
+    </script>
+
+<script>
+    function validateForm() {
+        // debugger;
+   let a = document.forms["myForm"]["nume"].value;
+   let b = document.forms["myForm"]["email"].value;
+   let c = document.forms["myForm"]["telefon"].value;
+   let d = document.forms["myForm"]["adresa"].value;
+   let e = document.forms["myForm"]["oras"].value;
+   let f = document.forms["myForm"]["optiune"].value;
+   let g = document.forms["myForm"]["nume-firma"].value;
+   let h = document.forms["myForm"]["cui"].value;
+
+   if (a == "" ) {
+     alert("Name must be filled out");
+     return false;
+   }
+       else if (b == "" ) {
+         alert("Email must be filled out");
+         return false;
+       }
+         else if (c == "" ) {
+         alert("Telefon must be filled out");
+         return false;
+       }
+         else if  (d == "" ) {
+         alert("Adresa firmei must be filled out");
+                  return false;
+       }
+         else if (e == "" ) {
+         alert("Orasul must be filled out");
+         return false;
+       }
+         else if (f == "" ) {
+         alert("Optiunea must be filled out");
+         return false;
+       }
+         else if (g == "" ) {
+         alert("Numele firmei must be filled out");
+         return false;
+       }
+         else if (h == "" ) {
+         alert("Codul CUI firmei must be filled out");
+         return false;
+       }
+        
+    return true;
+
+ }
+
+</script>
+
+<body>
+    <div>
+        <h2 class="ex2">Completeaza formularul pentru a te inscrie la cursul: <br> Invata programare logic, practic si inteligent codul scris</h2>
+    <div>
+
+            <form name="myForm" onsubmit="return validateForm()">
+                <label for="fname">Nume si prenume: </label>
+                <input type="text" name="Nume" id="nume" placeholder="Nume si prenume">
+                <label for="fname"> Email:</label>
+                <input type="text" name="Email" id="email" placeholder="Email">
+                <label for="fname"> Telefon: </label>
+                <input type="text" name="Telefon" id="telefon" placeholder="Telefon">
+                <label for="fname"> Adresa completa:  </label>
+                <input type="text" name="Adresa" id="adresa" placeholder="Adresa completa">
+                <label for="fname"> Oras si Judet:  </label>
+                <input type="text" name="Oras" id="oras" placeholder="Oras">
+                <label for="fname"> Optiune Inscriere: </label>
+                <input type="text" name="Optiune" id="optiune" placeholder="Optiune Inscriere: ">
+                <label for="fname"> Nume Firma (optional):  </label>
+                <input type="text" name="nume-firma" id="nume-firma" placeholder="Nume Firma ">
+                <label for="fname"> Cod CUI:  </label>
+                <input type="text" name="cod-cui" id="cui" placeholder="Cod CUI">
+
+                <input class="btnSubmit" value="Submit" id="btnSubmit" onclick="testVariable()"> </input>
+            </form>
+
+
+            <div>
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+                <p id="p4"></p>
+                <p id="p5"></p>
+                <p id="p6"></p>
+                <p id="p7"></p>
+                <p id="p8"></p>
+            </div>
+        </div>
+</body>
+
+ <footer>
+        <div class="footerDiv">
+            <div class="footerLinks">
+                <div class="footerLinkWrapper"><a href="contact.html" class="footerLink">Contact</a> | </div>
+                <div class="footerLinkWrapper"><a href="#" class="footerLink">Termeni și condiții</a> | </div>
+                <div class="footerLinkWrapper"><a href="#" class="footerLink">Politica de cookies</a></div>
+            </div>
+            <div class="footerCopyright">Copyright © 2021 Invata programare logic, practic si intelegand codul scris. All rights reserved.</div>
+        </div>
+    </footer>
+
+</html>
